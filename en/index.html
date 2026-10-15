@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neraca — Know Where You Stand | Smart Personal Finance App with Acha AI</title>
+  <meta name="description" content="Neraca is a personal finance management app with a Dual-Wallet system, real-time Google Sheets sync, and the Acha AI Financial Copilot. Know Where You Stand.">
+  <meta name="theme-color" content="#0B1914">
+  <link rel="icon" type="image/png" href="../assets/images/neraca_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="../assets/images/neraca_logo.png" alt="Neraca logo" width="34" height="34">
+        <span>Neraca
+          <span class="brand-slogan">Know Where You Stand</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#wallets">Dual Wallet</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#reviews">Reviews</a>
+        <a href="../privacy-policy.html">Privacy</a>
+        <a class="nav-cta" href="#download">Download</a>
+        <span class="lang-switch" aria-label="Choose language">
+          <a href="../index.html" data-lang-set="id">ID</a>
+          <a href="index.html" aria-current="true" data-lang-set="en">EN</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill"><span class="dot"></span> Personal Finance App</span>
+          <h1>Know exactly <span class="accent">where you stand</span>, anytime.</h1>
+          <p class="lead">
+            Neraca separates your daily spending from future savings with a <strong>Dual-Wallet</strong> system,
+            syncs your ledger to Google Sheets in real time, and is backed by <strong>Acha AI</strong>,
+            which understands everyday spending notes.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#download">Download Now</a>
+            <a class="btn btn-ghost" href="#features">Explore Features</a>
+          </div>
+          <div class="hero-badges">
+            <span>💸 Dual-Wallet</span>
+            <span>📊 Google Sheets Sync</span>
+            <span>🤖 Acha AI (Gemini)</span>
+            <span>🛡️ Guest Mode</span>
+          </div>
+        </div>
+
+        <div class="shot">
+          <div class="shot-frame">
+            <img src="../assets/screenshots/home.png"
+                 onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-home.svg';"
+                 alt="Neraca app home screen" width="260" height="565" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Dual Wallet ===== -->
+    <section class="section section-alt" id="wallets">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Core Concept</span>
+          <h2>Two Wallets, No Illusions</h2>
+          <p>Neraca's core idea: keep operating cash separate from future savings so your balance never lies.</p>
+        </div>
+
+        <div class="wallet-strip">
+          <div class="wallet-card daily">
+            <span class="wallet-tag">Daily Cash</span>
+            <h3>Operating Money</h3>
+            <p>For everyday and monthly spending. Expenses cut this balance directly, and income adds to it.</p>
+          </div>
+          <div class="wallet-card saving">
+            <span class="wallet-tag">Dream Savings</span>
+            <h3>Protected Money</h3>
+            <p>Emergency funds, investments, and future goals. <strong>Immune to daily spending</strong> — it only grows from transfers or allocated savings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Key Features</span>
+          <h2>Everything You Need to Save Tidily</h2>
+          <p>From AI-powered quick notes to budget-limit alerts — all in a single app.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon icon-cyan">🤖</span>
+            <h3>Acha AI Financial Copilot</h3>
+            <p>Type <em>"gas 25k, meatballs 15k, latte 20k"</em> — it splits them into individual transactions. Scan receipts with your camera (OCR) or discuss your monthly cash flow.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-emerald">📊</span>
+            <h3>Real-Time Google Sheets Sync</h3>
+            <p>Every transaction is written to your own spreadsheet automatically — two-way, with no manual export/import. Monthly tabs plus formula reconciliation.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-gold">🚨</span>
+            <h3>Budget Limits &amp; Alerts</h3>
+            <p>Set monthly quotas for 7 expense categories. Get notified at 80% (warning) or 100% (overbudget) — with anti-spam protection.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-lime">🎯</span>
+            <h3>Savings Goals</h3>
+            <p>Set a target amount with a deadline. Neraca calculates the required monthly contribution and shows a progress bar with time remaining.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-cyan">🛡️</span>
+            <h3>Isolated Guest Mode</h3>
+            <p>Try it without a Google account. Guest data is strictly guarded: Drive, Sheets, and background sync are fully blocked — zero data leakage.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-emerald">🔄</span>
+            <h3>Persistent Session</h3>
+            <p>Stay signed in even after the app is force-closed. The session only ends when you press Sign Out — not when the app is backgrounded.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Screenshots ===== -->
+    <section class="section section-alt" id="screenshots">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Preview</span>
+          <h2>The App at a Glance</h2>
+          <p>A dark, elegant interface that's comfortable to use anytime — including at night.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="../assets/screenshots/home.png"
+                   onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-home.svg';"
+                   alt="Neraca home screen showing two wallet balances and recent activity" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Home</h4>
+              <p>Wallet balances &amp; activity</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="../assets/screenshots/statistics.png"
+                   onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-statistics.svg';"
+                   alt="Neraca statistics screen with spending charts by category" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Statistics</h4>
+              <p>Charts &amp; category breakdown</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="../assets/screenshots/wallets.png"
+                   onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-wallets.svg';"
+                   alt="Neraca wallets screen with daily cash and dream savings" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Wallets</h4>
+              <p>Daily Cash &amp; Dream Savings</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="../assets/screenshots/acha-ai.png"
+                   onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-acha-ai.svg';"
+                   alt="Acha AI financial copilot chat screen" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Acha AI</h4>
+              <p>Chat &amp; finance consulting</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="../assets/screenshots/batch-tx.png"
+                   onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-batch-tx.svg';"
+                   alt="Batch transaction input from free text" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Batch Transactions</h4>
+              <p>One sentence, many entries</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="../assets/screenshots/login.png"
+                   onerror="this.onerror=null; this.src='../assets/screenshots/placeholder-login.svg';"
+                   alt="Neraca login screen" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Sign In</h4>
+              <p>Google, email, or guest</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Reviews</span>
+          <h2>What Users Say</h2>
+          <p>Feedback from early users who tried the Dual-Wallet flow and Acha AI.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <blockquote>"Finally I know where my monthly money goes. Wallet transfers keep my savings consistent — no more 'supposedly left' that's actually zero."</blockquote>
+            <div class="reviewer">
+              <img src="../assets/images/acha_avatar.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <div class="r-name">Dimas R.</div>
+                <div class="r-meta">Early user · Employee</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <blockquote>"Typing 'gas 25k, coffee 15k' instantly becomes two neat transactions. Acha AI even catches abbreviations and store names."</blockquote>
+            <div class="reviewer">
+              <img src="../assets/images/acha_avatar.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <div class="r-name">Sari W.</div>
+                <div class="r-meta">Early user · Student</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <blockquote>"I love that every transaction shows up in Google Sheets right away. I can review my books from my laptop without exporting anything."</blockquote>
+            <div class="reviewer">
+              <img src="../assets/images/acha_avatar.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <div class="r-name">Andi P.</div>
+                <div class="r-meta">Early user · Freelancer</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="review-note">※ Names on review cards are illustrative samples. Replace them with real testimonials before publishing.</p>
+      </div>
+    </section>
+
+    <!-- ===== Download CTA ===== -->
+    <section class="section section-alt" id="download">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to Know Where You Stand?</h2>
+          <p>Download Neraca and start separating daily cash from dream savings — powered by Acha AI.</p>
+          <div class="cta-row">
+            <!-- Replace href with your Google Play / App Store links when live -->
+            <a class="btn btn-primary" href="#">Google Play</a>
+            <a class="btn btn-ghost" href="#">App Store</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="../assets/images/neraca_logo.png" alt="Neraca logo" width="34" height="34">
+            <span>Neraca
+              <span class="brand-slogan">Know Where You Stand</span>
+            </span>
+          </a>
+          <p>Personal finance management with Dual-Wallet, Google Sheets sync, and the Acha AI Financial Copilot.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#wallets">Dual Wallet</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../privacy-policy-id.html">Kebijakan Privasi (ID)</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+            <li><a href="../index.html">Bahasa Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Dalvero. All rights reserved.</span>
+        <span>Made with ❤️ in Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../lang-switch.js"></script>
+</body>
+</html>

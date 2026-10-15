@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi — Neraca</title>
+  <meta name="description" content="Kebijakan Privasi aplikasi keuangan pribadi Neraca: data yang dikumpulkan, cara penggunaan, layanan pihak ketiga, dan hak Anda.">
+  <meta name="theme-color" content="#0B1914">
+  <link rel="icon" type="image/png" href="assets/images/neraca_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/neraca_logo.png" alt="Logo Neraca" width="34" height="34">
+        <span>Neraca
+          <span class="brand-slogan">Know Where You Stand</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="index.html#fitur">Fitur</a>
+        <a href="index.html">Beranda</a>
+        <a href="terms-id.html">Ketentuan</a>
+        <a class="nav-cta" href="index.html#unduh">Unduh</a>
+        <span class="lang-switch" aria-label="Pilih bahasa">
+          <a href="privacy-policy-id.html" aria-current="true" data-lang-set="id">ID</a>
+          <a href="privacy-policy.html" data-lang-set="en">EN</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="legal-wrap">
+    <div class="container">
+      <div class="legal-header">
+        <span class="eyebrow">Legal</span>
+        <h1>Kebijakan Privasi</h1>
+        <p class="updated">Terakhir diperbarui: <b>15 Oktober 2026</b></p>
+      </div>
+
+      <div class="lang-note">
+        Dokumen ini juga tersedia dalam <a href="privacy-policy.html">Bahasa Inggris</a>.
+      </div>
+
+      <div class="legal-body">
+        <nav class="toc" aria-label="Daftar isi">
+          <h2>Daftar Isi</h2>
+          <ol>
+            <li><a href="#who">Tentang Kami</a></li>
+            <li><a href="#collect">Data yang Kami Kumpulkan</a></li>
+            <li><a href="#use">Bagaimana Data Digunakan</a></li>
+            <li><a href="#third">Layanan Pihak Ketiga</a></li>
+            <li><a href="#storage">Penyimpanan &amp; Keamanan</a></li>
+            <li><a href="#guest">Mode Tamu</a></li>
+            <li><a href="#rights">Hak Anda &amp; Penghapusan Data</a></li>
+            <li><a href="#children">Privasi Anak</a></li>
+            <li><a href="#changes">Perubahan Kebijakan</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="who">1. Tentang Kami</h2>
+        <p>
+          Neraca ("Aplikasi") adalah aplikasi manajemen keuangan pribadi yang dikembangkan oleh
+          <strong>Dalvero</strong> ("kami"). Kebijakan Privasi ini menjelaskan informasi apa yang
+          dikumpulkan Aplikasi, bagaimana data digunakan, disimpan, dan dibagikan, serta pilihan
+          yang Anda miliki. Kebijakan ini berlaku untuk aplikasi mobile maupun situs web ini.
+        </p>
+        <p>
+          Neraca dirancang sebagai <strong>alat pribadi untuk satu pengguna</strong>: catatan
+          keuangan Anda adalah milik Anda, dan kami tidak pernah menjual, menyewakan, atau
+          memonetisasi data Anda dengan cara apa pun.
+        </p>
+
+        <h2 id="collect">2. Data yang Kami Kumpulkan</h2>
+
+        <h3>2.1 Informasi Akun</h3>
+        <p>Saat Anda masuk, kami menerima:</p>
+        <ul>
+          <li><strong>Google Sign-In:</strong> alamat email, nama tampilan, dan foto profil sebagaimana diizinkan layar persetujuan OAuth Google.</li>
+          <li><strong>Email &amp; Kata Sandi:</strong> alamat email dan kata sandi terenkripsi (ditangani Firebase Authentication; kata sandi tidak pernah terlihat oleh kami).</li>
+          <li><strong>ID Pengguna:</strong> identifikasi internal (Firebase UID atau identitas tamu lokal) yang dipartisi per pengguna di perangkat.</li>
+        </ul>
+
+        <h3>2.2 Data Keuangan</h3>
+        <ul>
+          <li><strong>Transaksi</strong> (pemasukan, pengeluaran, transfer), <strong>saldo dompet</strong> (Kas Harian dan Tabungan Impian), <strong>anggaran kategori</strong>, dan <strong>target tabungan</strong>.</li>
+          <li>Data ini disimpan <strong>lokal di perangkat Anda</strong> menggunakan Android SharedPreferences, dikunci berdasarkan ID pengguna.</li>
+          <li>Jika Anda mengaktifkan sinkronisasi Google Sheets, data yang sama ditulis ke <strong>Google Spreadsheet milik Anda sendiri</strong> (lihat Bagian 4). Kami tidak pernah menerima salinannya di server kami — untuk fitur ini kami tidak memiliki server.</li>
+        </ul>
+
+        <h3>2.3 Konten AI (Acha AI)</h3>
+        <ul>
+          <li><strong>Teksten yang Anda ketik</strong> ke asisten Acha AI (misalnya catatan belanja atau pertanyaan seputar keuangan).</li>
+          <li><strong>Gambar yang Anda proses</strong> — foto struk kasir atau tangkapan layar mutasi bank yang Anda ambil melalui kamera atau galeri.</li>
+          <li>Input ini dikirim ke <strong>Google Gemini API</strong> untuk pemrosesan bahasa alami dan OCR. Riwayat percakapan disimpan lokal di perangkat, dikunci berdasarkan ID pengguna.</li>
+        </ul>
+
+        <h3>2.4 Foto Profil</h3>
+        <p>
+          Jika Anda mengunggah foto profil, gambar tersebut dikirim ke <strong>Cloudinary</strong>
+          (unggahan tanpa tanda tangan/unsigned) dan URL-nya disimpan di profil lokal Anda.
+        </p>
+
+        <h3>2.5 Data yang TIDAK Kami Kumpulkan</h3>
+        <ul>
+          <li>Tidak ada lokasi presisi, kontak, atau akses mikrofon.</li>
+          <li>Tidak ada identifikasi iklan dan tidak ada SDK analytics pihak ketiga.</li>
+          <li>Tidak ada kredensial bank — Neraca tidak pernah meminta atau menyimpan login perbankan Anda.</li>
+          <li>Isi notifikasi dibuat dan ditampilkan <strong>hanya di perangkat Anda</strong> (peringatan anggaran, pengingat).</li>
+        </ul>
+
+        <h2 id="use">3. Bagaimana Data Digunakan</h2>
+        <ul>
+          <li>Menyediakan fitur inti: mencatat transaksi, menghitung saldo, transfer antar dompet, dan pelacakan anggaran.</li>
+          <li>Menyinkronkan pembukuan ke Google Spreadsheet milik Anda saat Anda secara eksplisit menautkannya.</li>
+          <li>Memproses teks dan gambar yang <em>Anda</em> kirimkan ke Acha AI agar dapat memecah transaksi, membaca struk, dan menjawab pertanyaan keuangan.</li>
+          <li>Mempertahankan sesi login Anda dan memulihkan data saat berganti akun di perangkat yang sama.</li>
+          <li>Menampilkan notifikasi lokal untuk peringatan anggaran (ambang 80% / 100%) dan pengingat target tabungan.</li>
+        </ul>
+        <div class="callout">
+          <p><strong>Batasan tujuan:</strong> data Anda hanya digunakan untuk menjalankan fitur Aplikasi untuk Anda. Kami tidak menggunakannya untuk periklanan, profil, atau pengambilan keputusan otomatis.</p>
+        </div>
+
+        <h2 id="third">4. Layanan Pihak Ketiga</h2>
+        <p>Aplikasi bergantung pada penyedia berikut. Masing-masing memproses data di bawah kebijakan privasinya sendiri:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Layanan</th>
+              <th>Tujuan</th>
+              <th>Data yang Terlibat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Firebase Authentication</strong> (Google)</td>
+              <td>Login via Google, email/sandi, dan sesi anonim</td>
+              <td>Email, nama, foto profil, ID pengguna</td>
+            </tr>
+            <tr>
+              <td><strong>Google Sheets API</strong></td>
+              <td>Sinkronisasi dua arah pembukuan ke spreadsheet Anda sendiri</td>
+              <td>Transaksi, anggaran, saldo dompet (hanya saat ditautkan)</td>
+            </tr>
+            <tr>
+              <td><strong>Google Drive API</strong></td>
+              <td>Menelusuri dan membuat file spreadsheet Anda</td>
+              <td>Metadata file spreadsheet (hanya saat ditautkan)</td>
+            </tr>
+            <tr>
+              <td><strong>Google Gemini API</strong></td>
+              <td>Pemrosesan transaksi bahasa alami dan OCR struk/mutasi</td>
+              <td>Teks dan gambar yang Anda kirim ke Acha AI</td>
+            </tr>
+            <tr>
+              <td><strong>Cloudinary</strong></td>
+              <td>Hosting foto profil</td>
+              <td>Foto profil yang Anda unggah</td>
+            </tr>
+            <tr>
+              <td><strong>Google Fonts</strong> (hanya situs web ini)</td>
+              <td>Menampilkan tipografi Plus Jakarta Sans</td>
+              <td>Alamat IP (diminta dari CDN Google)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Tautan:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a> ·
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privasi Firebase</a> ·
+          <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Cloudinary</a>
+        </p>
+
+        <h2 id="storage">5. Penyimpanan &amp; Keamanan Data</h2>
+        <ul>
+          <li><strong>Local-first:</strong> data keuangan tersimpan di penyimpanan perangkat (SharedPreferences) dan <strong>dipartisikan per ID pengguna</strong> (transaksi dikunci per akun), sehingga beberapa akun atau tamu di satu perangkat tidak pernah tercampur.</li>
+          <li><strong>Spreadsheet milik Anda:</strong> jika sinkronisasi aktif, data berlangsung langsung dari perangkat ke akun Google Anda sendiri. Kami tidak dapat membacanya.</li>
+          <li><strong>Transportasi:</strong> seluruh lalu lintas API menggunakan TLS/HTTPS.</li>
+          <li><strong>Sesi:</strong> status login disimpan lokal di perangkat; keluar (logout) kapan saja untuk mengakhiri sesi aktif.</li>
+        </ul>
+
+        <h2 id="guest">6. Mode Tamu</h2>
+        <p>
+          Anda dapat memakai Neraca tanpa akun. Pada Mode Tamu, Aplikasi lebih dulu mencoba
+          Firebase Anonymous Authentication; jika offline, beralih ke sesi tamu lokal murni.
+          <strong>Google Drive, Google Sheets, dan seluruh sinkronisasi latar belakang diblokir
+          keras pada Mode Tamu</strong> — data keuangan tamu tidak pernah meninggalkan perangkat.
+        </p>
+
+        <h2 id="rights">7. Hak Anda &amp; Penghapusan Data</h2>
+        <p>Anda memegang kendali atas data Anda. Anda dapat:</p>
+        <ol>
+          <li><strong>Menghapus spreadsheet Anda:</strong> karena sinkronisasi menulis ke Google Spreadsheet milik Anda sendiri, Anda dapat mengedit atau menghapusnya langsung di Google Sheets/Drive kapan saja.</li>
+          <li><strong>Menghapus data lokal:</strong> hapus data Aplikasi melalui Pengaturan Android → Aplikasi → Neraca → Hapus Penyimpanan, atau dengan mencopot pemasangan Aplikasi.</li>
+          <li><strong>Keluar (logout):</strong> gunakan tombol Keluar di Aplikasi untuk mengakhiri sesi dan menghapus status sesi aktif.</li>
+          <li><strong>Minta penghapusan akun:</strong> hubungi kami di alamat pada Bagian 10 dan kami akan menghapus akun Firebase serta data yang dapat kami kaitkan dengan Anda.</li>
+        </ol>
+        <p>Di mana GDPR atau hukum serupa berlaku, Anda juga dapat meminta akses, koreksi, atau salinan data pribadi Anda, serta menolak atau membatasi pemrosesan tertentu.</p>
+
+        <h2 id="children">8. Privasi Anak</h2>
+        <p>
+          Neraca adalah alat keuangan pribadi untuk audiens umum. Aplikasi tidak ditujukan bagi
+          anak-anak di bawah 13 tahun (atau usia minimum di wilayah Anda), dan kami tidak
+          sengaja mengumpulkan informasi pribadi dari anak-anak. Jika Anda yakin seorang anak
+          telah memberikan data kepada kami, hubungi kami dan kami akan menghapusnya.
+        </p>
+
+        <h2 id="changes">9. Perubahan Kebijakan Ini</h2>
+        <p>
+          Kami dapat memperbarui Kebijakan Privasi ini untuk mencerminkan perubahan pada Aplikasi
+          atau hukum yang berlaku. Tanggal "Terakhir diperbarui" di bagian atas halaman ini akan
+          berubah saat ada penyuntingan. Penggunaan Aplikasi yang berlanjut setelah perubahan
+          merupakan persetujuan terhadap kebijakan yang direvisi.
+        </p>
+
+        <h2 id="contact">10. Hubungi Kami</h2>
+        <div class="callout">
+          <p>
+            Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini atau data Anda, hubungi kami di:<br>
+            <strong>Email:</strong> <a href="mailto:privacy@neraca.dalvero.com">privacy@neraca.dalvero.com</a><br>
+            <strong>Pengembang:</strong> Dalvero
+          </p>
+        </div>
+
+        <div class="callout">
+          <p>Pertanyaan tentang cara Aplikasi memakai data Google Anda? Lihat juga <a href="terms-id.html">Syarat &amp; Ketentuan</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <span>© 2026 Dalvero. Seluruh hak cipta dilindungi.</span>
+        <span>
+          <a href="privacy-policy.html">English</a> ·
+          <a href="terms-id.html">Ketentuan</a> ·
+          <a href="index.html">Beranda</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang-switch.js"></script>
+</body>
+</html>

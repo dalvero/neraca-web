@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Neraca</title>
+  <meta name="description" content="Privacy Policy for the Neraca personal finance app: what data we collect, how it's used, third-party services, and your rights.">
+  <meta name="theme-color" content="#0B1914">
+  <link rel="icon" type="image/png" href="assets/images/neraca_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/neraca_logo.png" alt="Neraca logo" width="34" height="34">
+        <span>Neraca
+          <span class="brand-slogan">Know Where You Stand</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a class="nav-cta" href="index.html#download">Download</a>
+        <span class="lang-switch" aria-label="Choose language">
+          <a href="privacy-policy.html" aria-current="true" data-lang-set="en">EN</a>
+          <a href="privacy-policy-id.html" data-lang-set="id">ID</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="legal-wrap">
+    <div class="container">
+      <div class="legal-header">
+        <span class="eyebrow">Legal</span>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: <b>October 15, 2026</b></p>
+      </div>
+
+      <div class="lang-note">
+        This document is available in <a href="privacy-policy-id.html">Bahasa Indonesia</a>.
+      </div>
+
+      <div class="legal-body">
+        <nav class="toc" aria-label="Table of contents">
+          <h2>Contents</h2>
+          <ol>
+            <li><a href="#who">Who We Are</a></li>
+            <li><a href="#collect">Data We Collect</a></li>
+            <li><a href="#use">How We Use Your Data</a></li>
+            <li><a href="#third">Third-Party Services</a></li>
+            <li><a href="#storage">Data Storage &amp; Security</a></li>
+            <li><a href="#guest">Guest Mode</a></li>
+            <li><a href="#rights">Your Rights &amp; Data Deletion</a></li>
+            <li><a href="#children">Children's Privacy</a></li>
+            <li><a href="#changes">Changes to This Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="who">1. Who We Are</h2>
+        <p>
+          Neraca ("the App") is a personal finance management application developed by
+          <strong>Dalvero</strong> ("we", "us", or "our"). This Privacy Policy explains what
+          information the App collects, how it is used, stored, and shared, and what choices
+          you have. It applies to the mobile application and this website.
+        </p>
+        <p>
+          The App is designed as a <strong>single-user, private tool</strong>: your financial
+          records belong to you, and we do not sell, rent, or monetize your data in any way.
+        </p>
+
+        <h2 id="collect">2. Data We Collect</h2>
+
+        <h3>2.1 Account Information</h3>
+        <p>When you sign in, we receive:</p>
+        <ul>
+          <li><strong>Google Sign-In:</strong> your email address, display name, and profile photo, as permitted by the Google OAuth consent screen.</li>
+          <li><strong>Email &amp; Password:</strong> your email address and an encrypted password (handled by Firebase Authentication; passwords are never visible to us).</li>
+          <li><strong>User ID:</strong> an internal identifier (Firebase UID or a local guest identifier) used to partition your data on the device.</li>
+        </ul>
+
+        <h3>2.2 Financial Data</h3>
+        <ul>
+          <li><strong>Transactions</strong> (income, expenses, transfers), <strong>wallet balances</strong> (Daily Cash and Dream Savings), <strong>category budgets</strong>, and <strong>savings goals</strong>.</li>
+          <li>This data is stored <strong>locally on your device</strong> using Android SharedPreferences, keyed by your user ID.</li>
+          <li>If you choose to enable Google Sheets sync, the same data is written to <strong>your own Google Spreadsheet</strong> (see Section 4). We never receive a copy on our servers — we have no servers for this purpose.</li>
+        </ul>
+
+        <h3>2.3 AI Content (Acha AI)</h3>
+        <ul>
+          <li><strong>Text you type</strong> into the Acha AI assistant (for example, spending notes or questions about your finances).</li>
+          <li><strong>Images you choose to process</strong> — photos of receipts or bank/transaction statements you scan with the camera or pick from your gallery.</li>
+          <li>These inputs are sent to the <strong>Google Gemini API</strong> for natural-language parsing and OCR. Chat history is stored locally on your device, keyed by your user ID.</li>
+        </ul>
+
+        <h3>2.4 Profile Photo</h3>
+        <p>
+          If you upload a profile picture, the image is uploaded to <strong>Cloudinary</strong>
+          (unsigned upload) and its URL is stored in your local profile.
+        </p>
+
+        <h3>2.5 Data We Do Not Collect</h3>
+        <ul>
+          <li>No precise location, contacts, or microphone access.</li>
+          <li>No advertising identifiers and no third-party analytics SDKs.</li>
+          <li>No bank credentials — Neraca never asks for or stores your banking login.</li>
+          <li>Notification content is generated and displayed <strong>only on your device</strong> (budget alerts, reminders).</li>
+        </ul>
+
+        <h2 id="use">3. How We Use Your Data</h2>
+        <ul>
+          <li>To provide the core features: recording transactions, calculating balances, transfers between wallets, and budget tracking.</li>
+          <li>To sync your ledger with your own Google Spreadsheet when you explicitly connect it.</li>
+          <li>To process the text and images <em>you</em> submit to Acha AI so it can parse transactions, read receipts, and answer financial questions.</li>
+          <li>To keep you signed in between sessions and restore your data when you switch accounts on the same device.</li>
+          <li>To display local notifications for budget warnings (80% / 100% thresholds) and savings-goal reminders.</li>
+        </ul>
+        <div class="callout">
+          <p><strong>Purpose limitation:</strong> your data is used only to run the App's features for you. We do not use it for advertising, profiling, or automated decision-making.</p>
+        </div>
+
+        <h2 id="third">4. Third-Party Services</h2>
+        <p>The App relies on the following providers. Each processes data under its own privacy policy:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Purpose</th>
+              <th>Data Involved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Firebase Authentication</strong> (Google)</td>
+              <td>Sign-in with Google, email/password, and anonymous sessions</td>
+              <td>Email, name, profile photo, user ID</td>
+            </tr>
+            <tr>
+              <td><strong>Google Sheets API</strong></td>
+              <td>Two-way sync of your ledger to your own spreadsheet</td>
+              <td>Transactions, budgets, wallet balances (only when connected)</td>
+            </tr>
+            <tr>
+              <td><strong>Google Drive API</strong></td>
+              <td>Listing and creating your spreadsheet files</td>
+              <td>Spreadsheet file metadata (only when connected)</td>
+            </tr>
+            <tr>
+              <td><strong>Google Gemini API</strong></td>
+              <td>Natural-language transaction parsing and receipt/statement OCR</td>
+              <td>Text and images you submit to Acha AI</td>
+            </tr>
+            <tr>
+              <td><strong>Cloudinary</strong></td>
+              <td>Hosting profile photos</td>
+              <td>Profile image you upload</td>
+            </tr>
+            <tr>
+              <td><strong>Google Fonts</strong> (this website only)</td>
+              <td>Displaying the Plus Jakarta Sans typeface</td>
+              <td>IP address (requested from Google's CDN)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Links:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> ·
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> ·
+          <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener">Cloudinary Privacy Policy</a>
+        </p>
+
+        <h2 id="storage">5. Data Storage &amp; Security</h2>
+        <ul>
+          <li><strong>Local-first:</strong> financial data lives in device storage (SharedPreferences) and is <strong>partitioned by user ID</strong> (e.g., transactions are keyed per account), so multiple accounts or guests on one device never mix data.</li>
+          <li><strong>Your spreadsheet, your cloud:</strong> if you enable sync, data goes directly from your device to your own Google account. We cannot read it.</li>
+          <li><strong>Transport:</strong> all API traffic uses TLS/HTTPS.</li>
+          <li><strong>Sessions:</strong> login state is stored locally on the device; sign out at any time to clear the active session.</li>
+        </ul>
+
+        <h2 id="guest">6. Guest Mode</h2>
+        <p>
+          You can use Neraca without an account. In Guest Mode the App first attempts Firebase
+          Anonymous Authentication; if offline, it falls back to a purely local guest session.
+          <strong>Google Drive, Google Sheets, and all background sync are hard-blocked in Guest
+          Mode</strong> — guest financial data never leaves the device.
+        </p>
+
+        <h2 id="rights">7. Your Rights &amp; Data Deletion</h2>
+        <p>You are in control of your data. You can:</p>
+        <ol>
+          <li><strong>Delete your spreadsheet:</strong> because sync writes to your own Google Spreadsheet, you can edit or delete it directly in Google Sheets/Drive at any time.</li>
+          <li><strong>Clear local data:</strong> remove the App's data via Android Settings → Apps → Neraca → Clear Storage, or by uninstalling the App.</li>
+          <li><strong>Sign out:</strong> use the Logout button in the App to end your session and clear the active session state.</li>
+          <li><strong>Request account deletion:</strong> contact us at the address in Section 10 and we will delete your Firebase account and any data we can associate with it.</li>
+        </ol>
+        <p>Where GDPR or similar law applies, you may also request access to, correction of, or a copy of your personal data, and you may object to or restrict certain processing.</p>
+
+        <h2 id="children">8. Children's Privacy</h2>
+        <p>
+          Neraca is a personal finance tool intended for general audiences. It is not directed
+          at children under 13 (or the minimum age in your jurisdiction), and we do not
+          knowingly collect personal information from children. If you believe a child has
+          provided us with data, contact us and we will delete it.
+        </p>
+
+        <h2 id="changes">9. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy to reflect changes in the App or applicable law.
+          The "Last updated" date at the top of this page will change when edits are made.
+          Continued use of the App after changes constitutes acceptance of the revised policy.
+        </p>
+
+        <h2 id="contact">10. Contact Us</h2>
+        <div class="callout">
+          <p>
+            If you have questions about this Privacy Policy or your data, contact us at:<br>
+            <strong>Email:</strong> <a href="mailto:privacy@neraca.dalvero.com">privacy@neraca.dalvero.com</a><br>
+            <strong>Developer:</strong> Dalvero
+          </p>
+        </div>
+
+        <div class="callout">
+          <p>Questions about how the App uses your Google data? See also our <a href="terms.html">Terms of Use</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <span>© 2026 Dalvero. All rights reserved.</span>
+        <span>
+          <a href="privacy-policy-id.html">Bahasa Indonesia</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="index.html">Home</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang-switch.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neraca — Know Where You Stand | Aplikasi Keuangan Pintar dengan Acha AI</title>
+  <meta name="description" content="Neraca adalah asisten manajemen keuangan pribadi dengan Harmoni Dua Dompet, sinkronisasi Google Sheets real-time, dan Acha AI Financial Copilot. Know Where You Stand.">
+  <meta name="theme-color" content="#0B1914">
+  <link rel="icon" type="image/png" href="assets/images/neraca_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/neraca_logo.png" alt="Logo Neraca" width="34" height="34">
+        <span>Neraca
+          <span class="brand-slogan">Know Where You Stand</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#fitur">Fitur</a>
+        <a href="#dompet">Dua Dompet</a>
+        <a href="#screenshot">Screenshot</a>
+        <a href="#review">Review</a>
+        <a href="privacy-policy-id.html">Privasi</a>
+        <a class="nav-cta" href="#unduh">Unduh</a>
+        <span class="lang-switch" aria-label="Pilih bahasa">
+          <a href="index.html" aria-current="true" data-lang-set="id">ID</a>
+          <a href="en/index.html" data-lang-set="en">EN</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill"><span class="dot"></span> Aplikasi Keuangan Pribadi</span>
+          <h1>Tahu persis <span class="accent">posisi keuanganmu</span>, setiap saat.</h1>
+          <p class="lead">
+            Neraca memisahkan dana harian dan tabungan impian lewat sistem <strong>Dual-Wallet</strong>,
+            menyinkronkan pembukuan ke Google Sheets secara real-time, dan dibantu
+            <strong>Acha AI</strong> yang memahami catatan belanja dalam bahasa sehari-hari.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#unduh">Unduh Sekarang</a>
+            <a class="btn btn-ghost" href="#fitur">Lihat Fitur</a>
+          </div>
+          <div class="hero-badges">
+            <span>💸 Dual-Wallet</span>
+            <span>📊 Sync Google Sheets</span>
+            <span>🤖 Acha AI (Gemini)</span>
+            <span>🛡️ Mode Tamu</span>
+          </div>
+        </div>
+
+        <div class="shot" aria-hidden="false">
+          <div class="shot-frame">
+            <img src="assets/screenshots/home.png"
+                 onerror="this.onerror=null; this.src='assets/screenshots/placeholder-home.svg';"
+                 alt="Tampilan Beranda aplikasi Neraca" width="260" height="565" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Dua Dompet ===== -->
+    <section class="section section-alt" id="dompet">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Konsep Harmoni</span>
+          <h2>Dua Dompet, Tanpa Ilusi Saldo</h2>
+          <p>Konsep inti Neraca: pisahkan dana operasional dari tabungan masa depan agar tidak pernah lagi salah perhitungan.</p>
+        </div>
+
+        <div class="wallet-strip">
+          <div class="wallet-card daily">
+            <span class="wallet-tag">Kas Harian</span>
+            <h3>Dana Operasional</h3>
+            <p>Untuk kebutuhan konsumtif dan belanja rutin harian/bulanan. Pengeluaran belanja langsung memotong saldo ini, dan pemasukan menambahkannya.</p>
+          </div>
+          <div class="wallet-card saving">
+            <span class="wallet-tag">Tabungan Impian</span>
+            <h3>Dana Terproteksi</h3>
+            <p>Dana darurat, investasi, dan target masa depan. <strong>Kebal terhadap belanja harian</strong> — hanya bertambah dari transfer kas atau alokasi tabungan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Fitur ===== -->
+    <section class="section" id="fitur">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Fitur Utama</span>
+          <h2>Semua yang Kamu Butuhkan untuk Nabung Rapi</h2>
+          <p>Dari catatan kilat berbasis AI sampai peringatan batas anggaran — semuanya dalam satu aplikasi.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon icon-cyan">🤖</span>
+            <h3>Acha AI Financial Copilot</h3>
+            <p>Tulis <em>"beli bensin 25rb, batagor 15rb, kopi 20rb"</em> — dipecah jadi transaksi individual. Bisa juga pindai struk lewat kamera (OCR) atau konsultasi arus kas bulanan.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-emerald">📊</span>
+            <h3>Sync Google Sheets Real-Time</h3>
+            <p>Setiap transaksi otomatis tercatat di spreadsheet Google-mu — dua arah, tanpa ekspor/impor manual. Tab otomatis per bulan plus rekonsiliasi rumus.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-gold">🚨</span>
+            <h3>Batas Anggaran &amp; Peringatan</h3>
+            <p>Atur kuota bulanan untuk 7 pos pengeluaran. Dapatkan notifikasi saat pengeluaran menyentuh 80% (warning) atau 100% (overbudget) — tanpa spam.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-lime">🎯</span>
+            <h3>Target Tabungan</h3>
+            <p>Tetapkan target dana beserta tenggat waktu. Neraca menghitung kebutuhan per bulan dan menampilkan progress bar dengan estimasi sisa waktu.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-cyan">🛡️</span>
+            <h3>Mode Tamu Terisolasi</h3>
+            <p>Coba tanpa akun Google. Data tamu dijaga ketat: Drive, Sheets, dan sync latar belakang sepenuhnya diblokir — zero data leakage.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon-emerald">🔄</span>
+            <h3>Sesi Login Persisten</h3>
+            <p>Tetap login meski aplikasi ditutup paksa. Sesi hanya berakhir saat kamu menekan tombol Keluar — bukan karena aplikasi di-background.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Screenshot ===== -->
+    <section class="section section-alt" id="screenshot">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Pratinjau</span>
+          <h2>Isi Aplikasi dalam Sekejap</h2>
+          <p>Tampilan Neraca yang gelap, elegan, dan nyaman dipakai kapan saja — termasuk di malam hari.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="assets/screenshots/home.png"
+                   onerror="this.onerror=null; this.src='assets/screenshots/placeholder-home.svg';"
+                   alt="Screenshot Beranda Neraca: saldo dua dompet dan mutasi terakhir" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Beranda</h4>
+              <p>Saldo dua dompet &amp; mutasi</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="assets/screenshots/statistics.png"
+                   onerror="this.onerror=null; this.src='assets/screenshots/placeholder-statistics.svg';"
+                   alt="Screenshot Statistik Neraca: grafik pengeluaran per kategori" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Statistik</h4>
+              <p>Grafik &amp; breakdown pos</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="assets/screenshots/wallets.png"
+                   onerror="this.onerror=null; this.src='assets/screenshots/placeholder-wallets.svg';"
+                   alt="Screenshot Dompet Neraca: detail kas harian dan tabungan impian" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Dompet</h4>
+              <p>Kas Harian &amp; Tabungan Impian</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="assets/screenshots/acha-ai.png"
+                   onerror="this.onerror=null; this.src='assets/screenshots/placeholder-acha-ai.svg';"
+                   alt="Screenshot Acha AI: chat copilot keuangan" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Acha AI</h4>
+              <p>Chat &amp; konsultasi keuangan</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="assets/screenshots/batch-tx.png"
+                   onerror="this.onerror=null; this.src='assets/screenshots/placeholder-batch-tx.svg';"
+                   alt="Screenshot input transaksi massal dari teks bebas" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Batch Transaksi</h4>
+              <p>Satu kalimat, banyak transaksi</p>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="shot-frame">
+              <img src="assets/screenshots/login.png"
+                   onerror="this.onerror=null; this.src='assets/screenshots/placeholder-login.svg';"
+                   alt="Screenshot layar login Neraca" width="260" height="565" loading="lazy">
+            </div>
+            <figcaption>
+              <h4>Masuk</h4>
+              <p>Google, email, atau tamu</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Review ===== -->
+    <section class="section" id="review">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Review</span>
+          <h2>Yang Dikatakan Pengguna</h2>
+          <p>Feedback dari pengguna awal yang sudah mencoba alur Dual-Wallet dan Acha AI.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+            <blockquote>"Akhirnya tahu uang bulanan ke mana saja. Fitur transfer antar dompet bikin nabung jadi konsisten — nggak ada lagi 'katanya sisa' padahal nol."</blockquote>
+            <div class="reviewer">
+              <img src="assets/images/acha_avatar.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <div class="r-name">Dimas R.</div>
+                <div class="r-meta">Pengguna awal · Karyawan</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+            <blockquote>"Ngetik 'bensin 25rb, kopi 15rb' langsung jadi dua transaksi rapi. Acha AI nangkep singkatan 'rb' dan nama toko tanpa salah."</blockquote>
+            <div class="reviewer">
+              <img src="assets/images/acha_avatar.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <div class="r-name">Sari W.</div>
+                <div class="r-meta">Pengguna awal · Mahasiswa</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+            <blockquote>"Suka semua transaksi langsung muncul di Google Sheets. Aku bisa cek pembukuan dari laptop tanpa export apapun."</blockquote>
+            <div class="reviewer">
+              <img src="assets/images/acha_avatar.png" alt="" width="42" height="42" loading="lazy">
+              <div>
+                <div class="r-name">Andi P.</div>
+                <div class="r-meta">Pengguna awal · Freelancer</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="review-note">※ Nama pada kartu review bersifat contoh. Ganti dengan testimoni pengguna asli sebelum dipublikasikan.</p>
+      </div>
+    </section>
+
+    <!-- ===== CTA Unduh ===== -->
+    <section class="section section-alt" id="unduh">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Siap Tahu Posisi Keuanganmu?</h2>
+          <p>Unduh Neraca dan mulai pisahkan dana harian dari tabungan impian — dibantu Acha AI.</p>
+          <div class="cta-row">
+            <!-- Ganti href dengan tautan Google Play / App Store saat sudah tayang -->
+            <a class="btn btn-primary" href="#">Google Play</a>
+            <a class="btn btn-ghost" href="#">App Store</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/images/neraca_logo.png" alt="Logo Neraca" width="34" height="34">
+            <span>Neraca
+              <span class="brand-slogan">Know Where You Stand</span>
+            </span>
+          </a>
+          <p>Asisten manajemen keuangan pribadi dengan Dual-Wallet, sinkronisasi Google Sheets, dan Acha AI Financial Copilot.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Halaman</h4>
+          <ul>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#dompet">Dua Dompet</a></li>
+            <li><a href="#screenshot">Screenshot</a></li>
+            <li><a href="#review">Review</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy-id.html">Kebijakan Privasi</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy (EN)</a></li>
+            <li><a href="terms-id.html">Syarat &amp; Ketentuan</a></li>
+            <li><a href="en/index.html">English</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Dalvero. Seluruh hak cipta dilindungi.</span>
+        <span>Dibuat dengan ❤️ di Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang-switch.js"></script>
+</body>
+</html>
